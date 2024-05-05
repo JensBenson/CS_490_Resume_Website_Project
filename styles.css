@@ -1,0 +1,98 @@
+/* Style the side navigation bar */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+/* Style links inside the navigation bar */
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: #555;
+}
+
+/* Style the main content */
+.main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    padding: 20px;
+    background-color: #bab1b1;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+
+/* Style the profile section */
+.profile {
+    display: flex;
+} 
+
+/* Style the profile image */
+.profile-img {
+    width: 300px;
+    text-align: center;
+}
+
+/* Style the bio section */
+.bio {
+    flex: 1;
+}
+
+.bio h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #d9cfcf;
+}
+
+/* Add down arrow to accordion headers */
+.accordion-header::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    float: right;
+}
+
+/* Rotate down arrow when accordion is expanded */
+.accordion-header.active::after {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
